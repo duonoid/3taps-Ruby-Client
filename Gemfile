@@ -1,6 +1,9 @@
 source "http://rubygems.org"
 gem "supermodel", "~> 0.1.4"
-gem "curb", "~> 0.7.9"
+gem "curb", "~> 0.7.9"                  # requires system dependency:
+                                        #   curl/curl.h (libcurl4-gnutls-dev,
+                                        #       libcurl4-openssl-dev)
+
 gem "activesupport", "~> 3.0"
 # Add dependencies required to use your gem here.
 # Example:
