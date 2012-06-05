@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{threetaps-client}
-  s.version = "0.5.0"
+  s.name = "threetaps-client"
+  s.version = "1.0.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["3taps.com"]
-  s.date = %q{2011-03-21}
-  s.description = %q{A Ruby gem for accessing the 3taps API. See more at http://developers.3taps.net}
-  s.email = %q{developers@3taps.com}
+  s.date = "2012-06-05"
+  s.description = "A Ruby gem for accessing the 3taps API. See more at http://developers.3taps.net"
+  s.email = "developers@3taps.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -80,71 +80,44 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/models/test_posting.rb",
     "test/test_struct.rb",
-    "test/test_threetaps-client.rb"
+    "test/test_threetaps-client.rb",
+    "threetaps-client.gemspec"
   ]
-  s.homepage = %q{https://github.com/3taps/3taps-Ruby-Client}
+  s.homepage = "https://github.com/3taps/3taps-Ruby-Client"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{A Ruby gem for accessing the 3taps API}
-  s.test_files = [
-    "spec/client/client_spec.rb",
-    "spec/client/geocoder_client_spec.rb",
-    "spec/client/posting_client_spec.rb",
-    "spec/client/reference_client_spec.rb",
-    "spec/client/search_client_spec.rb",
-    "spec/client/status_client_spec.rb",
-    "spec/dto/geocoder/geocoder_response_spec.rb",
-    "spec/dto/search/search_request_spec.rb",
-    "spec/dto/search/search_response_spec.rb",
-    "spec/spec_helper.rb",
-    "test/client/test_client.rb",
-    "test/client/test_geocoder_client.rb",
-    "test/client/test_posting_client.rb",
-    "test/client/test_reference_client.rb",
-    "test/client/test_search_client.rb",
-    "test/client/test_status_client.rb",
-    "test/dto/geocoder/test_geocoder_request.rb",
-    "test/dto/geocoder/test_geocoder_response.rb",
-    "test/dto/search/test_best_match_response.rb",
-    "test/dto/search/test_range_request.rb",
-    "test/dto/status/test_status_update_request.rb",
-    "test/helper.rb",
-    "test/models/test_posting.rb",
-    "test/test_struct.rb",
-    "test/test_threetaps-client.rb"
-  ]
+  s.rubygems_version = "1.8.10"
+  s.summary = "A Ruby gem for accessing the 3taps API"
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<supermodel>, ["~> 0.1.4"])
       s.add_runtime_dependency(%q<curb>, ["~> 0.7.9"])
-      s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
+      s.add_runtime_dependency(%q<activesupport>, ["~> 3.0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.5"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
     else
       s.add_dependency(%q<supermodel>, ["~> 0.1.4"])
       s.add_dependency(%q<curb>, ["~> 0.7.9"])
-      s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
+      s.add_dependency(%q<activesupport>, ["~> 3.0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_dependency(%q<bundler>, ["~> 1.0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.5"])
       s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
     end
   else
     s.add_dependency(%q<supermodel>, ["~> 0.1.4"])
     s.add_dependency(%q<curb>, ["~> 0.7.9"])
-    s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
+    s.add_dependency(%q<activesupport>, ["~> 3.0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+    s.add_dependency(%q<bundler>, ["~> 1.0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.5"])
     s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
   end
